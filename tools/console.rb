@@ -7,5 +7,8 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
+jooyon = Customer.new("jooyon", "won")
+jooyon.add_review("jooyon", "KFC", 3, "something")
+
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
