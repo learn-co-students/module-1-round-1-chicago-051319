@@ -7,5 +7,27 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-binding.pry
+derek= Customer.new("Derek","Townsend")
+micheal= Customer.new("Micheal","Alfred")
+dave= Customer.new("Dave","Johnson")
+
+italian_fiesta= Restaurant.new("Italian Fiesta")
+buger_king= Restaurant.new("Buger King")
+mc_donalds= Restaurant.new("Mc Donalds")
+
+review_one=Review.new(1,"Burger King is trash",micheal,buger_king)
+review_two=Review.new(3,"Burger King is not that great",dave,buger_king)
+review_three=Review.new(5,"Italian Fiesta Amazing",derek,italian_fiesta)
+
+dave.add_review(italian_fiesta,"Great Food",5)
+# Review.new(rating,content,customer,restaurant)
+# p italian_fiesta.longest_review
+# p dave.full_name
+# p Customer.all_names
+p Restaurant.find_by_name("Italian Fiesta")
+# p Review.all
+# p dave.num_reviews
+# p dave.restaurants
+
+# binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
